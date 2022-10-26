@@ -1,0 +1,481 @@
+body{
+    display: block;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebar{
+  position: fixed;
+    width: 302px;
+    height: 100vh;
+    border-right: 0.5px solid rgb(231, 227, 227);
+    display: block;
+    
+    
+}
+.main-body{
+    margin-left: 310px;
+    width: calc(100% - 739px);
+    height: 100%;
+}
+.main-body .navbar h3,img:hover{
+    cursor: pointer;
+}
+.navbar img:hover{
+    border-radius: 100px;
+    background-color:  rgb(222, 224, 226);
+}
+.main-body .navbar{
+    height: 55px;
+    display: flex;
+    border-bottom: 0.5px solid rgb(252, 250, 250);
+    background-color: white;
+}
+.navbar{
+    position: fixed;
+    width: calc(100% - 747px);
+    margin-left: -6px;
+    top: 0px;
+}
+.navbar h3,img{
+    margin-top: 15px;
+}
+.navbar h3{
+    margin-right: 485px;
+    margin-left: 20px;
+}
+.navbar img{
+    height: 23px;
+    width: 23px;
+}
+.tweet{
+    margin-top: 46px;
+    width: 100%;
+    height: 125px;
+    display: block;
+    border-bottom: 0.5px solid rgb(231, 227, 227);
+}
+.tweet .top .image img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    margin-left: 10px;
+}
+.main-body .tweet .top{
+    width: 100%;
+    display: flex;
+    margin-left: 12px;
+}
+.tweet .top input{
+    margin-left: 10px;
+    font-size: 20px;
+    border:none;
+}
+.main-body .tweet .bottom{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 75px;
+}
+.right-sidebar{
+    width: 437px;
+    height:1200px;
+    border-left:  0.5px solid rgb(231, 227, 227);
+}
+.sidebar .category{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.category:hover{
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(222, 224, 226);
+}
+.logo{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;    
+}
+.logo:hover{
+    border-radius: 50px; 
+    border: 1px solid rgb(210, 244, 247);;
+    background-color:rgb(210, 244, 247);
+    cursor: pointer;
+}
+.button{
+    width: 230px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border: none;
+    background-color:  rgb(29, 155, 240);
+}
+.button:hover{
+    cursor: pointer;
+    background-color:  rgb(27, 139, 214);
+}
+.category img{
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.category label{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    margin-left: -4px;
+    padding-left: 4px;
+}
+.sidebar .account{
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    height: 60px;
+    margin-left: 40px;
+}
+.sidebar .account:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(222, 224, 226);
+}
+.sidebar .account .user span{
+    display: block;
+}
+.sidebar .account .user{
+    margin-left: 4px;
+    margin-right: 50px;
+    margin-top: -10px;
+}
+.sidebar .account .image img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.styled-tweet .image img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    margin-left: 10px;
+}
+.styled-tweet{
+    display: block;
+    padding: 20px;
+    height: auto;
+    border-bottom:  0.5px solid rgb(231, 227, 227)
+}
+.styled-tweet:hover{
+    cursor: pointer;
+    background-color:  rgb(247, 245, 245);
+}
+.styled-tweet .more:hover{
+    border-radius: 50%;
+    color: rgb(27, 139, 214);
+    width: 35px;
+    background-color:rgb(210, 244, 247);
+    margin-left: 245px;
+    margin-bottom: 20px;
+}
+.styled-tweet .user_handler .user,.styled-tweet .user_handler .more{
+    padding-left: 10px;
+}
+.styled-tweet .user_handler{
+    display: flex;
+}
+.styled-tweet .content{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.styled-tweet .content img{
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.styled-tweet .user_handler .user{
+    margin-top: 15px;
+}
+.styled-tweet .user_handler .more{
+    margin-left: 245px;
+    align-items: center;
+}
+.user_handler .account .more{
+    margin-top: -5px;
+}
+
+.right-sidebar .twitter-search{
+    background-color: rgb(247, 249, 249);
+    height: 45px;
+    min-height: 32px;
+    width: 345px;
+    margin-bottom: 20px;
+    z-index: 4;
+    margin-left: 30px;
+    margin-right: 45px;
+    border-color: rgb(247, 249, 249);
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+}
+.twitter-search .search{
+    display: flex;
+    width: auto;
+    padding: 15px;
+}
+.twitter-search .search i{
+    font-size: 20px;
+    color: gray;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.twitter-search .search input{
+    border: none;
+    background-color: rgb(247, 249, 249);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.bottom i{
+    color: rgb(88, 183, 247);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+.gif{
+    border: 1px solid  rgb(29, 155, 240);
+    padding-bottom: 15px;
+    margin-top: 10px;
+    width: 18px; 
+    height: 0px;
+    align-items: center;   
+    border-radius: 3px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.gif i{
+    font-size: 8px;
+    margin-left: -8px;
+    font-weight:bold;
+}
+.location i{
+    color:  rgb(163, 217, 248);
+    cursor: default;
+}
+.more-tweets:hover{
+    cursor: pointer;
+    background-color:  rgb(247, 245, 245);
+}
+.button2{
+    
+    width: 80px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+    height: 35px;
+    margin-left: 210px;
+    border: none;
+    background-color:  rgb(163, 217, 248);
+}
+.styled-tweet .comment-section{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.comment-section i{
+    color: rgb(99, 96, 96);
+    font-size: 15px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.fa-comment-o:hover,.fa-share:hover{
+    color: rgb(69, 175, 236);
+}
+.fa-retweet:hover{
+   color: rgb(14, 187, 14);
+}
+.fa-heart-o:hover{
+    color: rgb(235, 17, 53);
+}
+.poll:hover,.outer-gif:hover,.media:hover,.emoji:hover,.emoji:hover,.schedule:hover{
+    background-color: rgb(233, 243, 248);
+    border-radius: 100%;
+}
+
+.right-sidebar .body{
+    background-color: rgb(247, 249, 249);
+    margin-bottom: 16px;
+    border-color: rgb(247, 249, 249);
+    border-radius: 16px;
+    border-width: 1px;
+    border-style: solid;
+    width: 345px;
+    height: 630px;
+    margin-left: 30px;
+}
+.right-sidebar .who-to-follow{
+    background-color: rgb(247, 249, 249);
+    margin-bottom: 16px;
+    border-color: rgb(247, 249, 249);
+    border-radius: 16px;
+    border-width: 1px;
+    border-style: solid;
+    width: 345px;
+    height: 320px;
+    margin-left: 30px;
+}
+.right-sidebar .terms-of-service{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+    width: 345px;
+    height: 100px;
+    margin-left: 30px;
+    font-size: 13px;
+    color: grey;
+}
+.terms-of-service div{
+    margin-left: 20px;
+}
+.right-sidebar .who-to-follow h3, .right-sidebar .body h3{
+    margin-left: 20px;
+}
+.who-to-follow .acc{
+    display:flex;
+    width: auto;
+    height: 70px;
+    padding-top: 15px;
+}
+.who-to-follow .acc2{
+    display:flex;
+    width: auto;
+    height: 70px;
+    padding-top: 15px;
+}
+.who-to-follow .acc3{
+    display:flex;
+    width: auto;
+    height: 70px;
+    padding-top: 15px;
+}
+ .acc .user span{
+    display: block;
+ }
+ .acc2 .user span{
+    display: block;
+ }
+ .acc3 .user span{
+    display: block;
+ }
+ .acc .user,.acc .more{
+    margin-top: 8px;
+    padding-left: 12px;
+ }
+ .acc2 .user,.acc2 .more{
+    margin-top: 8px;
+    padding-left: 12px;
+ }
+ .acc3 .user,.acc3 .more{
+    margin-top: 8px;
+    padding-left: 12px;
+ }
+
+ .acc .more{
+    margin-left: 55px;
+}
+.acc2 .more{
+    margin-left: 80px;
+}
+.acc3 .more{
+    margin-left: 70px;
+}
+.who-to-follow .acc:hover{
+    width: auto;
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: rgb(235, 238, 240);
+}
+.who-to-follow .acc2:hover{
+    width: auto;
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: rgb(235, 238, 240);
+}
+.who-to-follow .acc3:hover{
+    width: auto;
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: rgb(235, 238, 240);
+}
+
+.who-to-follow .acc .image img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.who-to-follow .acc2 .image img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.who-to-follow .acc3 .image img{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.follow{
+    
+    width: 80px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+    height: 35px;
+    border: none;
+    background-color:  rgb(17, 17, 17);
+}
+.follow:hover{
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+.right-sidebar .body .user, .right-sidebar .body .more{
+    margin-left: 2px;
+}
+.right-sidebar .body .acc{
+    display: flex;
+}
+.right-sidebar .body .acc{
+    padding: 10px;
+}
+.right-sidebar .body .more{
+    margin-left: 80px;
+}
+.right-sidebar .body .acc:hover{
+    background-color: rgb(232, 237, 238);
+}
